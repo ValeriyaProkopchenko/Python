@@ -1,11 +1,11 @@
 def task_1():
-    distance = float(input("Введите расстояние в километрах: "))
-    time = float(input("Введите время в часах: "))
-    if time <= 0:
-        print("Время должно быть больше нуля.")
-    else:
-        speed = distance / time
-        print(f"Скорость: {speed:.2f} км/ч.")
+  distance = float(input("Введите расстояние в километрах: "))
+  time = float(input("Введите время в часах: "))
+  if time <= 0:
+    print("Время должно быть больше нуля.")
+  else:
+    speed = distance / time
+    print(f"Скорость: {speed:.2f} км/ч.")
 
 def task_2():
   force = float(input("Введите силу в ньютонах: "))
@@ -69,30 +69,30 @@ def task_10():
   print(f"Объем цилиндра: {volume:.2f} м^3.")
 
 def main():
-    while True:
-        print("\nВыберите задачу (1-10) или нажмите 'q' для выхода:")
-        choice = input()
+  while True:
+    print("\nВыберите задачу (1-10) или нажмите 'q' для выхода:")
+    choice = input()
 
-        if choice == 'q':
-            break
+    if choice == 'q':
+      break
 
-        tasks = {
-            '1': task_1,
-            '2': task_2,
-            '3': task_3,
-            '4': task_4,
-            '5': task_5,
-            '6': task_6,
-            '7': task_7,
-            '8': task_8,
-            '9': task_9,
-            '10': task_10
-        }
+    tasks = {
+      '1': task_1,
+      '2': task_2,
+      '3': task_3,
+      '4': task_4,
+      '5': task_5,
+      '6': task_6,
+      '7': task_7,
+      '8': task_8,
+      '9': task_9,
+      '10': task_10
+    }
 
-        if choice in tasks:
-            tasks[choice]()
-        else:
-            print("Неверный выбор. Пожалуйста, выберите задачу от 1 до 10.")
+    if choice in tasks:
+      tasks[choice]()
+    else:
+      print("Неверный выбор. Пожалуйста, выберите задачу от 1 до 10.")
 
 if __name__ == "__main__":
-    main()
+  main()
